@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="5.141cm" height="5.141cm" viewBox="9.929 4.929 15.071 10.071"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<line x1="10.000" y1="5.000" x2="10.000" y2="10.000" stroke="#000000" stroke-width="0.100" />
+<line x1="10.000" y1="10.000" x2="15.000" y2="10.000" stroke="#000000" stroke-width="0.100" />
+<line x1="15.000" y1="10.000" x2="10.000" y2="5.000" stroke="#000000" stroke-width="0.100" />
+<line x1="10.000" y1="5.000" x2="15.000" y2="5.000" stroke="#000000" stroke-width="0.100" />
+<line x1="15.000" y1="5.000" x2="15.000" y2="10.000" stroke="#000000" stroke-width="0.100" />
+</svg>

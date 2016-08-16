@@ -1,0 +1,538 @@
+19 11
+XXXXXXXXXXXXXXXXXXX
+X                 X
+E                 X
+X   XXX XXX  K    X
+X   X     X       X
+X   X     X       X
+X   X  T  X       X
+X   X     X       X
+X   XXXXXXX       X
+X                 X
+XXXXXXXXXXXXXXEXXXX
+19 11
+XXXXXXXXXXXXXXXXXXX
+X                 X
+E                 X
+X   XXX XXX  K    X
+X   X     X       X
+X   X     X       X
+X   X  T  X       X
+X         X       X
+X   XXXXXXX       X
+X                 X
+XXXXXXXXXXXXXXEXXXX
+15 3
+XXXXXXXEXXXXXXX
+X     T K     X
+XXXXXXXXXXXXXXX
+15 3
+XXXXXXXEXXXXXXX
+X     T  K    X
+XXXXXXXXXXXXXXX
+15 3
+XXXXXXXEXXXXXXX
+X    T   K    X
+XXXXXXXXXXXXXXX
+15 3
+XXXXXXXEXXXXXXX
+X    T    K   X
+XXXXXXXXXXXXXXX
+15 3
+XXXXXXXEXXXXXXX
+X   T    K    X
+XXXXXXXXXXXXXXX
+15 3
+XXXXXXXEXXXXXXX
+X    T     K  X
+XXXXXXXXXXXXXXX
+3 15
+XEX
+XTX
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+XTX
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+XTX
+X X
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+X X
+XTX
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+XTX
+X X
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+XTX
+X X
+X X
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+X X
+X X
+XTX
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+X X
+XTX
+X X
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+X X
+X X
+X X
+XTX
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+X X
+X X
+XTX
+X X
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+3 15
+XEX
+X X
+X X
+XTX
+X X
+X X
+XKX
+X X
+X X
+X X
+X X
+X X
+X X
+X X
+XXX
+4 4
+XXEX
+XTKX
+E  X
+XXXX
+4 4
+XXEX
+X TX
+E KX
+XXXX
+4 4
+XXEX
+X  X
+EKTX
+XXXX
+4 4
+XXEX
+XK X
+ET X
+XXXX
+4 4
+XXEX
+XKTX
+E  X
+XXXX
+4 4
+XXEX
+X KX
+E TX
+XXXX
+4 4
+XXEX
+X  X
+ETKX
+XXXX
+4 4
+XXEX
+XT X
+EK X
+XXXX
+4 4
+XXEX
+X TX
+EK X
+XXXX
+4 4
+XXEX
+XK X
+E TX
+XXXX
+4 4
+XXEX
+X KX
+ET X
+XXXX
+4 4
+XXEX
+XT X
+E KX
+XXXX
+10 5
+XXXXXXXXXX
+ET       E
+X XXXXXXXX
+X  K     X
+XXXXXXXXXX
+10 5
+XXXXXXXXXX
+E T      E
+X XXXXXXXX
+X  K     X
+XXXXXXXXXX
+10 5
+XXXXXXXXXX
+E  T     E
+X XXXXXXXX
+X  K     X
+XXXXXXXXXX
+10 5
+XXXXXXXXXX
+E   T    E
+X XXXXXXXX
+X  K     X
+XXXXXXXXXX
+10 5
+XXXXXXXXXX
+E    T   E
+X XXXXXXXX
+X  K     X
+XXXXXXXXXX
+20 5
+XXXXXXXXXXXXXXXXXXXX
+E    T             E
+X XXXXXXXXXXXXXXXXXX
+X  K               X
+XXXXXXXXXXXXXXXXXXXX
+21 5
+XXXXXXXXXXXXXXXXXXXXX
+E    T              E
+X XXXXXXXXXXXXXXXXXXX
+X  K                X
+XXXXXXXXXXXXXXXXXXXXX
+22 5
+XXXXXXXXXXXXXXXXXXXXXX
+E    T               E
+X XXXXXXXXXXXXXXXXXXXX
+X  K                 X
+XXXXXXXXXXXXXXXXXXXXXX
+40 40
+XXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXX                    XXXXX
+XXXX       XXXX XXXXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXX XXXXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXX XXXX         XXXXX XXXXX
+XXXXXXXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXXXXXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX   XXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX K XXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX   XXXX XXXX XXXX         XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX           XXXXXXX XXXXX XXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX                         XXXXX XXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX                   XXXXX XXXX    XXX
+XXXX XXXXXXXXXXXXXXXXX XXXXX XXXX T  XXX
+XXXX XXXXXXXXXXXXXXXXX XXXXX XXXX    XXX
+XXXX                   XXXXX XXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXX
+XXXX                         XXXXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXX         XXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXXXXXX XXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXXXXXX XXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXX XXX XXXXXXXXX
+XXXX                   XXX XXX         E
+XXXXXXXXXX XXXXXXXXXXXXXXX XXXXXXX XXXXX
+XXXXXXXXXX XXXXXX            XXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX                  XXXXX
+XXXXXXXXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+40 40
+XXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXX                    XXXXX
+XXXX       XXXX XXXXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXX XXXXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXX XXXX         XXXXX XXXXX
+XXXXXXXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXXXXXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX   XXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX K XXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX   XXXX XXXX XXXX         XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX           XXXXXXX XXXXX XXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX                         XXXXX XXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX                   XXXXX XXXX    XXX
+XXXX XXXXXXXXXXXXXXXXX XXXXX XXXX T  XXX
+XXXX XXXXXXXXXXXXXXXXX XXXXX XXXX    XXX
+XXXX                   XXXXX XXXX XXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXX XXXXXX
+XXXX                         XXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXX         XX XXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXXXXXX    XXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXXXXXX XXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXX XXX XXXXXXXXX
+XXXX                   XXX XXX         E
+XXXXXXXXXX XXXXXXXXXXXXXXX XXXXXXX XXXXX
+XXXXXXXXXX XXXXXX            XXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX                  XXXXX
+XXXXXXXXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+40 40
+XXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXX XXXXXXXXXX                    XXXXX
+XXXX       XXXX XXXXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXX XXXXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXX XXXX         XXXXX XXXXX
+XXXXXXXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXXXXXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX   XXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX K XXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXX   XXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX XXXX XXXX XXXXXXX XXXXX XXXXX
+XXXX XXXXX           XXXXXXX XXXXX XXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX                         XXXXX XXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXX XXXXX
+XXXX                   XXXXX XXXX    XXX
+XXXX XXXXXXXXXXXXXXXXX XXXXX XXXX T  XXX
+XXXX XXXXXXXXXXXXXXXXX XXXXX XXXX    XXX
+XXXX                   XXXXX XXXX XXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXX XXXXXX
+XXXX                         XXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXXXXXXXXXXXXX XXXXXX
+XXXX XXXXXXXXXXXXXXXXX         XX XXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXXXXXX    XXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXXXXXX XXXXXXXXX
+XXXX XXXXXXXXXXXXXXXXX XXX XXX XXXXXXXXX
+XXXX                   XXX XXX         X
+XXXXXXXXXX XXXXXXXXXXXXXXX XXXXXXX XXXXX
+XXXXXXXXXX XXXXXX            XXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX XXXXXXXXXXXXXXXX XXXXX
+XXXXXXXXXX XXXXXX                  XXXXX
+XXXXXXXXXXEXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+40 40
+XEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E          T                           E
+E                                      E
+E             K                        E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+XEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX
+40 40
+XEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E          T                           E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                     K                E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+E                                      E
+XEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEX
+0 0

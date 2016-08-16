@@ -1,0 +1,6 @@
+{[= x y (x < 3 || y < 3)]
+  W (3 <= W <= 40) H (3 <= H <= 40);
+  {[*H]
+     line:string@[] (length(line) == W);
+  }
+}

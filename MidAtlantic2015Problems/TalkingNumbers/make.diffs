@@ -1,0 +1,38 @@
+allDiffs: compile test0.talkingNumbers_sjz.diff test1.talkingNumbers_sjz.diff test0.talkingNumbers_bcs.diff test1.talkingNumbers_bcs.diff test0.TalkingAboutNumbers_sjz.diff test1.TalkingAboutNumbers_sjz.diff
+
+test0.talkingNumbers_sjz.out: test0.in cpp/talkingNumbers_sjz.exe
+	 time -o test0.talkingNumbers_sjz.time cpp/talkingNumbers_sjz.exe < test0.in > test0.talkingNumbers_sjz.out
+
+test0.talkingNumbers_sjz.diff: test0.expected test0.talkingNumbers_sjz.out
+	 cmp test0.talkingNumbers_sjz.out test0.expected > test0.talkingNumbers_sjz.diff
+
+test0.talkingNumbers_bcs.out: test0.in cpp/talkingNumbers_bcs.exe
+	 time -o test0.talkingNumbers_bcs.time cpp/talkingNumbers_bcs.exe < test0.in > test0.talkingNumbers_bcs.out
+
+test0.talkingNumbers_bcs.diff: test0.expected test0.talkingNumbers_bcs.out
+	 cmp test0.talkingNumbers_bcs.out test0.expected > test0.talkingNumbers_bcs.diff
+
+test0.TalkingAboutNumbers_sjz.out: test0.in java/TalkingAboutNumbers_sjz.class
+	 time -o test0.TalkingAboutNumbers_sjz.time java -cp java TalkingAboutNumbers_sjz < test0.in > test0.TalkingAboutNumbers_sjz.out
+
+test0.TalkingAboutNumbers_sjz.diff: test0.expected test0.TalkingAboutNumbers_sjz.out
+	 cmp test0.TalkingAboutNumbers_sjz.out test0.expected > test0.TalkingAboutNumbers_sjz.diff
+
+test1.talkingNumbers_sjz.out: test1.in cpp/talkingNumbers_sjz.exe
+	 time -o test1.talkingNumbers_sjz.time cpp/talkingNumbers_sjz.exe < test1.in > test1.talkingNumbers_sjz.out
+
+test1.talkingNumbers_sjz.diff: test1.expected test1.talkingNumbers_sjz.out
+	 cmp test1.talkingNumbers_sjz.out test1.expected > test1.talkingNumbers_sjz.diff
+
+test1.talkingNumbers_bcs.out: test1.in cpp/talkingNumbers_bcs.exe
+	 time -o test1.talkingNumbers_bcs.time cpp/talkingNumbers_bcs.exe < test1.in > test1.talkingNumbers_bcs.out
+
+test1.talkingNumbers_bcs.diff: test1.expected test1.talkingNumbers_bcs.out
+	 cmp test1.talkingNumbers_bcs.out test1.expected > test1.talkingNumbers_bcs.diff
+
+test1.TalkingAboutNumbers_sjz.out: test1.in java/TalkingAboutNumbers_sjz.class
+	 time -o test1.TalkingAboutNumbers_sjz.time java -cp java TalkingAboutNumbers_sjz < test1.in > test1.TalkingAboutNumbers_sjz.out
+
+test1.TalkingAboutNumbers_sjz.diff: test1.expected test1.TalkingAboutNumbers_sjz.out
+	 cmp test1.TalkingAboutNumbers_sjz.out test1.expected > test1.TalkingAboutNumbers_sjz.diff
+

@@ -1,0 +1,39 @@
+<<< Testing file: test0.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: test0.in >>>
+<<< Testing file: grid.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: grid.in >>>
+<<< Testing file: sortOfSpiral.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: sortOfSpiral.in >>>
+<<< Testing file: twoRooms.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: twoRooms.in >>>
+<<< Testing file: minimal.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: minimal.in >>>
+<<< Testing file: small.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: small.in >>>
+<<< Testing file: pinwheel.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: pinwheel.in >>>
+<<< Testing file: slivers.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: slivers.in >>>
+<<< Testing file: serpentine.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: serpentine.in >>>
+<<< Testing file: test1.in >>>
+Extra characters after input.
+<<< DONE Testing file: test1.in >>>
+<<< Testing file: gardener_bcs.in >>>
+Extra characters after input.
+<<< DONE Testing file: gardener_bcs.in >>>
+<<< Testing file: cube.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: cube.in >>>
+<<< Testing file: points750.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: points750.in >>>

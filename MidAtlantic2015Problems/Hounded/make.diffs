@@ -1,0 +1,110 @@
+allDiffs: compile test0.hounded_sjz.diff test1.hounded_sjz.diff minimal.hounded_sjz.diff parallelStreets.hounded_sjz.diff mazes.hounded_sjz.diff oneStreet.hounded_sjz.diff test0.meastman1.diff test1.meastman1.diff minimal.meastman1.diff parallelStreets.meastman1.diff mazes.meastman1.diff oneStreet.meastman1.diff test0.Hounded_sjz.diff test1.Hounded_sjz.diff minimal.Hounded_sjz.diff parallelStreets.Hounded_sjz.diff mazes.Hounded_sjz.diff oneStreet.Hounded_sjz.diff
+
+test0.hounded_sjz.out: test0.in cpp/hounded_sjz.exe
+	 time -o test0.hounded_sjz.time cpp/hounded_sjz.exe < test0.in > test0.hounded_sjz.out
+
+test0.hounded_sjz.diff: test0.expected test0.hounded_sjz.out
+	 cmp test0.hounded_sjz.out test0.expected > test0.hounded_sjz.diff
+
+test0.meastman1.out: test0.in cpp/meastman1.exe
+	 time -o test0.meastman1.time cpp/meastman1.exe < test0.in > test0.meastman1.out
+
+test0.meastman1.diff: test0.expected test0.meastman1.out
+	 cmp test0.meastman1.out test0.expected > test0.meastman1.diff
+
+test0.Hounded_sjz.out: test0.in java/Hounded_sjz.class
+	 time -o test0.Hounded_sjz.time java -cp java Hounded_sjz < test0.in > test0.Hounded_sjz.out
+
+test0.Hounded_sjz.diff: test0.expected test0.Hounded_sjz.out
+	 cmp test0.Hounded_sjz.out test0.expected > test0.Hounded_sjz.diff
+
+test1.hounded_sjz.out: test1.in cpp/hounded_sjz.exe
+	 time -o test1.hounded_sjz.time cpp/hounded_sjz.exe < test1.in > test1.hounded_sjz.out
+
+test1.hounded_sjz.diff: test1.expected test1.hounded_sjz.out
+	 cmp test1.hounded_sjz.out test1.expected > test1.hounded_sjz.diff
+
+test1.meastman1.out: test1.in cpp/meastman1.exe
+	 time -o test1.meastman1.time cpp/meastman1.exe < test1.in > test1.meastman1.out
+
+test1.meastman1.diff: test1.expected test1.meastman1.out
+	 cmp test1.meastman1.out test1.expected > test1.meastman1.diff
+
+test1.Hounded_sjz.out: test1.in java/Hounded_sjz.class
+	 time -o test1.Hounded_sjz.time java -cp java Hounded_sjz < test1.in > test1.Hounded_sjz.out
+
+test1.Hounded_sjz.diff: test1.expected test1.Hounded_sjz.out
+	 cmp test1.Hounded_sjz.out test1.expected > test1.Hounded_sjz.diff
+
+minimal.hounded_sjz.out: minimal.in cpp/hounded_sjz.exe
+	 time -o minimal.hounded_sjz.time cpp/hounded_sjz.exe < minimal.in > minimal.hounded_sjz.out
+
+minimal.hounded_sjz.diff: minimal.expected minimal.hounded_sjz.out
+	 cmp minimal.hounded_sjz.out minimal.expected > minimal.hounded_sjz.diff
+
+minimal.meastman1.out: minimal.in cpp/meastman1.exe
+	 time -o minimal.meastman1.time cpp/meastman1.exe < minimal.in > minimal.meastman1.out
+
+minimal.meastman1.diff: minimal.expected minimal.meastman1.out
+	 cmp minimal.meastman1.out minimal.expected > minimal.meastman1.diff
+
+minimal.Hounded_sjz.out: minimal.in java/Hounded_sjz.class
+	 time -o minimal.Hounded_sjz.time java -cp java Hounded_sjz < minimal.in > minimal.Hounded_sjz.out
+
+minimal.Hounded_sjz.diff: minimal.expected minimal.Hounded_sjz.out
+	 cmp minimal.Hounded_sjz.out minimal.expected > minimal.Hounded_sjz.diff
+
+parallelStreets.hounded_sjz.out: parallelStreets.in cpp/hounded_sjz.exe
+	 time -o parallelStreets.hounded_sjz.time cpp/hounded_sjz.exe < parallelStreets.in > parallelStreets.hounded_sjz.out
+
+parallelStreets.hounded_sjz.diff: parallelStreets.expected parallelStreets.hounded_sjz.out
+	 cmp parallelStreets.hounded_sjz.out parallelStreets.expected > parallelStreets.hounded_sjz.diff
+
+parallelStreets.meastman1.out: parallelStreets.in cpp/meastman1.exe
+	 time -o parallelStreets.meastman1.time cpp/meastman1.exe < parallelStreets.in > parallelStreets.meastman1.out
+
+parallelStreets.meastman1.diff: parallelStreets.expected parallelStreets.meastman1.out
+	 cmp parallelStreets.meastman1.out parallelStreets.expected > parallelStreets.meastman1.diff
+
+parallelStreets.Hounded_sjz.out: parallelStreets.in java/Hounded_sjz.class
+	 time -o parallelStreets.Hounded_sjz.time java -cp java Hounded_sjz < parallelStreets.in > parallelStreets.Hounded_sjz.out
+
+parallelStreets.Hounded_sjz.diff: parallelStreets.expected parallelStreets.Hounded_sjz.out
+	 cmp parallelStreets.Hounded_sjz.out parallelStreets.expected > parallelStreets.Hounded_sjz.diff
+
+mazes.hounded_sjz.out: mazes.in cpp/hounded_sjz.exe
+	 time -o mazes.hounded_sjz.time cpp/hounded_sjz.exe < mazes.in > mazes.hounded_sjz.out
+
+mazes.hounded_sjz.diff: mazes.expected mazes.hounded_sjz.out
+	 cmp mazes.hounded_sjz.out mazes.expected > mazes.hounded_sjz.diff
+
+mazes.meastman1.out: mazes.in cpp/meastman1.exe
+	 time -o mazes.meastman1.time cpp/meastman1.exe < mazes.in > mazes.meastman1.out
+
+mazes.meastman1.diff: mazes.expected mazes.meastman1.out
+	 cmp mazes.meastman1.out mazes.expected > mazes.meastman1.diff
+
+mazes.Hounded_sjz.out: mazes.in java/Hounded_sjz.class
+	 time -o mazes.Hounded_sjz.time java -cp java Hounded_sjz < mazes.in > mazes.Hounded_sjz.out
+
+mazes.Hounded_sjz.diff: mazes.expected mazes.Hounded_sjz.out
+	 cmp mazes.Hounded_sjz.out mazes.expected > mazes.Hounded_sjz.diff
+
+oneStreet.hounded_sjz.out: oneStreet.in cpp/hounded_sjz.exe
+	 time -o oneStreet.hounded_sjz.time cpp/hounded_sjz.exe < oneStreet.in > oneStreet.hounded_sjz.out
+
+oneStreet.hounded_sjz.diff: oneStreet.expected oneStreet.hounded_sjz.out
+	 cmp oneStreet.hounded_sjz.out oneStreet.expected > oneStreet.hounded_sjz.diff
+
+oneStreet.meastman1.out: oneStreet.in cpp/meastman1.exe
+	 time -o oneStreet.meastman1.time cpp/meastman1.exe < oneStreet.in > oneStreet.meastman1.out
+
+oneStreet.meastman1.diff: oneStreet.expected oneStreet.meastman1.out
+	 cmp oneStreet.meastman1.out oneStreet.expected > oneStreet.meastman1.diff
+
+oneStreet.Hounded_sjz.out: oneStreet.in java/Hounded_sjz.class
+	 time -o oneStreet.Hounded_sjz.time java -cp java Hounded_sjz < oneStreet.in > oneStreet.Hounded_sjz.out
+
+oneStreet.Hounded_sjz.diff: oneStreet.expected oneStreet.Hounded_sjz.out
+	 cmp oneStreet.Hounded_sjz.out oneStreet.expected > oneStreet.Hounded_sjz.diff
+

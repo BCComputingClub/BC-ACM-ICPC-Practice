@@ -1,0 +1,6 @@
+<<< Testing file: test0.in >>>
+Extra characters after input.
+<<< DONE Testing file: test0.in >>>
+<<< Testing file: test1.in >>>
+Extra characters after input.
+<<< DONE Testing file: test1.in >>>

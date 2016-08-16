@@ -1,0 +1,32 @@
+allDiffs: compile test0.OfTheChildren_zeil.diff eights.OfTheChildren_zeil.diff clique4.OfTheChildren_zeil.diff 4clique4.OfTheChildren_zeil.diff test1.OfTheChildren_zeil.diff
+
+test0.OfTheChildren_zeil.out: test0.in java/OfTheChildren_zeil.class
+	 time -o test0.OfTheChildren_zeil.time java -cp java OfTheChildren_zeil < test0.in > test0.OfTheChildren_zeil.out
+
+test0.OfTheChildren_zeil.diff: test0.expected test0.OfTheChildren_zeil.out
+	 cmp test0.OfTheChildren_zeil.out test0.expected > test0.OfTheChildren_zeil.diff
+
+eights.OfTheChildren_zeil.out: eights.in java/OfTheChildren_zeil.class
+	 time -o eights.OfTheChildren_zeil.time java -cp java OfTheChildren_zeil < eights.in > eights.OfTheChildren_zeil.out
+
+eights.OfTheChildren_zeil.diff: eights.expected eights.OfTheChildren_zeil.out
+	 cmp eights.OfTheChildren_zeil.out eights.expected > eights.OfTheChildren_zeil.diff
+
+clique4.OfTheChildren_zeil.out: clique4.in java/OfTheChildren_zeil.class
+	 time -o clique4.OfTheChildren_zeil.time java -cp java OfTheChildren_zeil < clique4.in > clique4.OfTheChildren_zeil.out
+
+clique4.OfTheChildren_zeil.diff: clique4.expected clique4.OfTheChildren_zeil.out
+	 cmp clique4.OfTheChildren_zeil.out clique4.expected > clique4.OfTheChildren_zeil.diff
+
+4clique4.OfTheChildren_zeil.out: 4clique4.in java/OfTheChildren_zeil.class
+	 time -o 4clique4.OfTheChildren_zeil.time java -cp java OfTheChildren_zeil < 4clique4.in > 4clique4.OfTheChildren_zeil.out
+
+4clique4.OfTheChildren_zeil.diff: 4clique4.expected 4clique4.OfTheChildren_zeil.out
+	 cmp 4clique4.OfTheChildren_zeil.out 4clique4.expected > 4clique4.OfTheChildren_zeil.diff
+
+test1.OfTheChildren_zeil.out: test1.in java/OfTheChildren_zeil.class
+	 time -o test1.OfTheChildren_zeil.time java -cp java OfTheChildren_zeil < test1.in > test1.OfTheChildren_zeil.out
+
+test1.OfTheChildren_zeil.diff: test1.expected test1.OfTheChildren_zeil.out
+	 cmp test1.OfTheChildren_zeil.out test1.expected > test1.OfTheChildren_zeil.diff
+

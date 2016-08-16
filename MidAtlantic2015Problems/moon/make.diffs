@@ -1,0 +1,14 @@
+allDiffs: compile test0.moon.diff test1.moon.diff
+
+test0.moon.out: test0.in cpp/moon.exe
+	 time -o test0.moon.time cpp/moon.exe < test0.in > test0.moon.out
+
+test0.moon.diff: test0.expected test0.moon.out
+	 cmp test0.moon.out test0.expected > test0.moon.diff
+
+test1.moon.out: test1.in cpp/moon.exe
+	 time -o test1.moon.time cpp/moon.exe < test1.in > test1.moon.out
+
+test1.moon.diff: test1.expected test1.moon.out
+	 cmp test1.moon.out test1.expected > test1.moon.diff
+

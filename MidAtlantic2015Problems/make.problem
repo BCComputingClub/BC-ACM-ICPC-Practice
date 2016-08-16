@@ -1,0 +1,98 @@
+DIR=${PWD}
+PROBLEM=$(notdir ${DIR})
+#
+CS=$(CVersions:%=cpp/%.c)
+CPPS=$(CPPVersions:%=cpp/%.cpp)
+JAVAS=$(JAVAVersions:%=java/%.java)
+EXES=$(CPPS:%.cpp=%.exe) $(CS:%.c=%.exe)
+CLASSES=$(JAVAS:%.java=%.class)
+TestIn=$(Tests:%=%.in)
+TestAns=$(Tests:%=%.expected)
+COutputs=$(foreach cppv,$(CVersions),$(addsuffix .$(cppv),$(Tests)))
+CPPOutputs=$(foreach cppv,$(CPPVersions),$(addsuffix .$(cppv),$(Tests)))
+JavaOutputs=$(foreach javav,$(JAVAVersions),$(addsuffix .$(javav),$(Tests)))
+CPPdiffs=$(CPPOutputs:%=%.diff)
+Cdiffs=$(COutputs:%=%.diff)
+Javadiffs=$(JavaOutputs:%=%.diff)
+#
+#
+CFLAGS=-g -O2 -std=gnu99 -static
+CPPFLAGS=-g -O2 -std=gnu++11 -static
+#
+
+all: viva allDiffs page
+	cat *.diff
+	@grep -v "Blank line at end of input" testValidity.txt | grep -v DONE | grep -v "Extra characters after input"
+
+compile: $(EXES) $(CLASSES)
+
+setup: $(TestIn)
+
+%.in: %.in.txt
+	tr -d '\r' < $*.in.txt > $@
+
+%.expected: %.expected.txt
+	tr -d '\r' < $*.expected.txt > $@
+
+
+%.exe: %.c
+	g++ $(CFLAGS) -o $@ $*.c -lm
+
+%.exe: %.cpp
+	g++ $(CPPFLAGS) -o $@ $*.cpp
+
+%.class: %.java
+	javac -g -cp java $*.java
+
+
+page: ${PROBLEM}.pdf
+
+
+
+viva: testValidity.txt
+
+testValidity.txt: ${PROBLEM}.viva $(TestIn)
+	java -jar ../../VIVA/viva.jar ${PROBLEM}.viva $(TestIn) > testValidity.txt
+
+
+include make.diffs
+
+make.diffs: makefile
+	-rm make.diffs
+	echo allDiffs: compile $(CPPdiffs) $(Cdiffs) $(Javadiffs) > $@
+	echo >> $@
+	for test in $(Tests); do \
+	  for cppv in $(CPPVersions); do \
+	    echo $$test.$$cppv.out: $$test.in cpp/$$cppv.exe >> $@ ;\
+	    echo '\t' time -o $$test.$$cppv.time cpp/$$cppv.exe '<' $$test.in '>' $$test.$$cppv.out >> $@; \
+	    echo >> $@; \
+	    echo $$test.$$cppv.diff: $$test.expected $$test.$$cppv.out >> $@ ;\
+	    echo '\t' cmp $$test.$$cppv.out $$test.expected '>' $$test.$$cppv.diff >> $@ ; \
+	    echo >> $@; \
+	done; \
+	for cppv in $(CVersions); do \
+	    echo $$test.$$cppv.out: $$test.in cpp/$$cppv.exe >> $@ ;\
+	    echo '\t' time -o $$test.$$cppv.time cpp/$$cppv.exe '<' $$test.in '>' $$test.$$cppv.out >> $@; \
+	    echo >> $@; \
+	    echo $$test.$$cppv.diff: $$test.expected $$test.$$cppv.out >> $@ ;\
+	    echo '\t' cmp $$test.$$cppv.out $$test.expected '>' $$test.$$cppv.diff >> $@ ; \
+	    echo >> $@; \
+	done; \
+	for javav in $(JAVAVersions); do \
+	    echo $$test.$$javav.out: $$test.in java/$$javav.class >> $@ ;\
+	    echo '\t' time -o $$test.$$javav.time java -cp java $$javav '<' $$test.in '>' $$test.$$javav.out >> $@; \
+	    echo >> $@; \
+	    echo $$test.$$javav.diff: $$test.expected $$test.$$javav.out >> $@ ;\
+	    echo '\t' cmp $$test.$$javav.out $$test.expected '>' $$test.$$javav.diff >> $@ ; \
+	    echo >> $@; \
+	done \
+	done
+
+
+clean:
+	-/bin/rm -f java/*.class cpp/*.exe *.diff *.out testValidity.txt
+
+
+${PROBLEM}.pdf: ${PROBLEM}.tex test0.in test0.expected
+	cd ..; pdflatex -output-directory=${PROBLEM} -jobname=${PROBLEM} "\input{problemPage.tex}\input{${PROBLEM}/${PROBLEM}.tex}\end{document}"
+

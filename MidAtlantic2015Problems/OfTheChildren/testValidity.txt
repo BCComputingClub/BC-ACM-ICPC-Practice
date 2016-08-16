@@ -1,0 +1,20 @@
+<<< Testing file: test0.in >>>
+Fatal error: At line 8 token 3:  Unexpected EOLN encountered
+Processing stopped.
+<<< DONE Testing file: test0.in >>>
+<<< Testing file: eights.in >>>
+Fatal error: At line 17 token 3:  Unexpected EOLN encountered
+Processing stopped.
+<<< DONE Testing file: eights.in >>>
+<<< Testing file: clique4.in >>>
+Fatal error: At line 14 token 3:  Unexpected EOLN encountered
+Processing stopped.
+<<< DONE Testing file: clique4.in >>>
+<<< Testing file: 4clique4.in >>>
+Fatal error: At line 14 token 3:  Unexpected EOLN encountered
+Processing stopped.
+<<< DONE Testing file: 4clique4.in >>>
+<<< Testing file: test1.in >>>
+Fatal error: At line 8 token 3:  Unexpected EOLN encountered
+Processing stopped.
+<<< DONE Testing file: test1.in >>>

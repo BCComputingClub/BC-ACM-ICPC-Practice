@@ -1,0 +1,38 @@
+allDiffs: compile test0.sequences_sjz.diff test1.sequences_sjz.diff test0.sequences_bcs.diff test1.sequences_bcs.diff test0.Sequences_sjz.diff test1.Sequences_sjz.diff
+
+test0.sequences_sjz.out: test0.in cpp/sequences_sjz.exe
+	 time -o test0.sequences_sjz.time cpp/sequences_sjz.exe < test0.in > test0.sequences_sjz.out
+
+test0.sequences_sjz.diff: test0.expected test0.sequences_sjz.out
+	 cmp test0.sequences_sjz.out test0.expected > test0.sequences_sjz.diff
+
+test0.sequences_bcs.out: test0.in cpp/sequences_bcs.exe
+	 time -o test0.sequences_bcs.time cpp/sequences_bcs.exe < test0.in > test0.sequences_bcs.out
+
+test0.sequences_bcs.diff: test0.expected test0.sequences_bcs.out
+	 cmp test0.sequences_bcs.out test0.expected > test0.sequences_bcs.diff
+
+test0.Sequences_sjz.out: test0.in java/Sequences_sjz.class
+	 time -o test0.Sequences_sjz.time java -cp java Sequences_sjz < test0.in > test0.Sequences_sjz.out
+
+test0.Sequences_sjz.diff: test0.expected test0.Sequences_sjz.out
+	 cmp test0.Sequences_sjz.out test0.expected > test0.Sequences_sjz.diff
+
+test1.sequences_sjz.out: test1.in cpp/sequences_sjz.exe
+	 time -o test1.sequences_sjz.time cpp/sequences_sjz.exe < test1.in > test1.sequences_sjz.out
+
+test1.sequences_sjz.diff: test1.expected test1.sequences_sjz.out
+	 cmp test1.sequences_sjz.out test1.expected > test1.sequences_sjz.diff
+
+test1.sequences_bcs.out: test1.in cpp/sequences_bcs.exe
+	 time -o test1.sequences_bcs.time cpp/sequences_bcs.exe < test1.in > test1.sequences_bcs.out
+
+test1.sequences_bcs.diff: test1.expected test1.sequences_bcs.out
+	 cmp test1.sequences_bcs.out test1.expected > test1.sequences_bcs.diff
+
+test1.Sequences_sjz.out: test1.in java/Sequences_sjz.class
+	 time -o test1.Sequences_sjz.time java -cp java Sequences_sjz < test1.in > test1.Sequences_sjz.out
+
+test1.Sequences_sjz.diff: test1.expected test1.Sequences_sjz.out
+	 cmp test1.Sequences_sjz.out test1.expected > test1.Sequences_sjz.diff
+

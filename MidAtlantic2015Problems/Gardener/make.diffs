@@ -1,0 +1,236 @@
+allDiffs: compile test0.gardener_sjz.diff grid.gardener_sjz.diff sortOfSpiral.gardener_sjz.diff twoRooms.gardener_sjz.diff minimal.gardener_sjz.diff small.gardener_sjz.diff pinwheel.gardener_sjz.diff slivers.gardener_sjz.diff serpentine.gardener_sjz.diff test1.gardener_sjz.diff gardener_bcs.gardener_sjz.diff cube.gardener_sjz.diff points750.gardener_sjz.diff test0.gardener_bcs.diff grid.gardener_bcs.diff sortOfSpiral.gardener_bcs.diff twoRooms.gardener_bcs.diff minimal.gardener_bcs.diff small.gardener_bcs.diff pinwheel.gardener_bcs.diff slivers.gardener_bcs.diff serpentine.gardener_bcs.diff test1.gardener_bcs.diff gardener_bcs.gardener_bcs.diff cube.gardener_bcs.diff points750.gardener_bcs.diff test0.Gardener_zeil.diff grid.Gardener_zeil.diff sortOfSpiral.Gardener_zeil.diff twoRooms.Gardener_zeil.diff minimal.Gardener_zeil.diff small.Gardener_zeil.diff pinwheel.Gardener_zeil.diff slivers.Gardener_zeil.diff serpentine.Gardener_zeil.diff test1.Gardener_zeil.diff gardener_bcs.Gardener_zeil.diff cube.Gardener_zeil.diff points750.Gardener_zeil.diff
+
+test0.gardener_sjz.out: test0.in cpp/gardener_sjz.exe
+	 time -o test0.gardener_sjz.time cpp/gardener_sjz.exe < test0.in > test0.gardener_sjz.out
+
+test0.gardener_sjz.diff: test0.expected test0.gardener_sjz.out
+	 cmp test0.gardener_sjz.out test0.expected > test0.gardener_sjz.diff
+
+test0.gardener_bcs.out: test0.in cpp/gardener_bcs.exe
+	 time -o test0.gardener_bcs.time cpp/gardener_bcs.exe < test0.in > test0.gardener_bcs.out
+
+test0.gardener_bcs.diff: test0.expected test0.gardener_bcs.out
+	 cmp test0.gardener_bcs.out test0.expected > test0.gardener_bcs.diff
+
+test0.Gardener_zeil.out: test0.in java/Gardener_zeil.class
+	 time -o test0.Gardener_zeil.time java -cp java Gardener_zeil < test0.in > test0.Gardener_zeil.out
+
+test0.Gardener_zeil.diff: test0.expected test0.Gardener_zeil.out
+	 cmp test0.Gardener_zeil.out test0.expected > test0.Gardener_zeil.diff
+
+grid.gardener_sjz.out: grid.in cpp/gardener_sjz.exe
+	 time -o grid.gardener_sjz.time cpp/gardener_sjz.exe < grid.in > grid.gardener_sjz.out
+
+grid.gardener_sjz.diff: grid.expected grid.gardener_sjz.out
+	 cmp grid.gardener_sjz.out grid.expected > grid.gardener_sjz.diff
+
+grid.gardener_bcs.out: grid.in cpp/gardener_bcs.exe
+	 time -o grid.gardener_bcs.time cpp/gardener_bcs.exe < grid.in > grid.gardener_bcs.out
+
+grid.gardener_bcs.diff: grid.expected grid.gardener_bcs.out
+	 cmp grid.gardener_bcs.out grid.expected > grid.gardener_bcs.diff
+
+grid.Gardener_zeil.out: grid.in java/Gardener_zeil.class
+	 time -o grid.Gardener_zeil.time java -cp java Gardener_zeil < grid.in > grid.Gardener_zeil.out
+
+grid.Gardener_zeil.diff: grid.expected grid.Gardener_zeil.out
+	 cmp grid.Gardener_zeil.out grid.expected > grid.Gardener_zeil.diff
+
+sortOfSpiral.gardener_sjz.out: sortOfSpiral.in cpp/gardener_sjz.exe
+	 time -o sortOfSpiral.gardener_sjz.time cpp/gardener_sjz.exe < sortOfSpiral.in > sortOfSpiral.gardener_sjz.out
+
+sortOfSpiral.gardener_sjz.diff: sortOfSpiral.expected sortOfSpiral.gardener_sjz.out
+	 cmp sortOfSpiral.gardener_sjz.out sortOfSpiral.expected > sortOfSpiral.gardener_sjz.diff
+
+sortOfSpiral.gardener_bcs.out: sortOfSpiral.in cpp/gardener_bcs.exe
+	 time -o sortOfSpiral.gardener_bcs.time cpp/gardener_bcs.exe < sortOfSpiral.in > sortOfSpiral.gardener_bcs.out
+
+sortOfSpiral.gardener_bcs.diff: sortOfSpiral.expected sortOfSpiral.gardener_bcs.out
+	 cmp sortOfSpiral.gardener_bcs.out sortOfSpiral.expected > sortOfSpiral.gardener_bcs.diff
+
+sortOfSpiral.Gardener_zeil.out: sortOfSpiral.in java/Gardener_zeil.class
+	 time -o sortOfSpiral.Gardener_zeil.time java -cp java Gardener_zeil < sortOfSpiral.in > sortOfSpiral.Gardener_zeil.out
+
+sortOfSpiral.Gardener_zeil.diff: sortOfSpiral.expected sortOfSpiral.Gardener_zeil.out
+	 cmp sortOfSpiral.Gardener_zeil.out sortOfSpiral.expected > sortOfSpiral.Gardener_zeil.diff
+
+twoRooms.gardener_sjz.out: twoRooms.in cpp/gardener_sjz.exe
+	 time -o twoRooms.gardener_sjz.time cpp/gardener_sjz.exe < twoRooms.in > twoRooms.gardener_sjz.out
+
+twoRooms.gardener_sjz.diff: twoRooms.expected twoRooms.gardener_sjz.out
+	 cmp twoRooms.gardener_sjz.out twoRooms.expected > twoRooms.gardener_sjz.diff
+
+twoRooms.gardener_bcs.out: twoRooms.in cpp/gardener_bcs.exe
+	 time -o twoRooms.gardener_bcs.time cpp/gardener_bcs.exe < twoRooms.in > twoRooms.gardener_bcs.out
+
+twoRooms.gardener_bcs.diff: twoRooms.expected twoRooms.gardener_bcs.out
+	 cmp twoRooms.gardener_bcs.out twoRooms.expected > twoRooms.gardener_bcs.diff
+
+twoRooms.Gardener_zeil.out: twoRooms.in java/Gardener_zeil.class
+	 time -o twoRooms.Gardener_zeil.time java -cp java Gardener_zeil < twoRooms.in > twoRooms.Gardener_zeil.out
+
+twoRooms.Gardener_zeil.diff: twoRooms.expected twoRooms.Gardener_zeil.out
+	 cmp twoRooms.Gardener_zeil.out twoRooms.expected > twoRooms.Gardener_zeil.diff
+
+minimal.gardener_sjz.out: minimal.in cpp/gardener_sjz.exe
+	 time -o minimal.gardener_sjz.time cpp/gardener_sjz.exe < minimal.in > minimal.gardener_sjz.out
+
+minimal.gardener_sjz.diff: minimal.expected minimal.gardener_sjz.out
+	 cmp minimal.gardener_sjz.out minimal.expected > minimal.gardener_sjz.diff
+
+minimal.gardener_bcs.out: minimal.in cpp/gardener_bcs.exe
+	 time -o minimal.gardener_bcs.time cpp/gardener_bcs.exe < minimal.in > minimal.gardener_bcs.out
+
+minimal.gardener_bcs.diff: minimal.expected minimal.gardener_bcs.out
+	 cmp minimal.gardener_bcs.out minimal.expected > minimal.gardener_bcs.diff
+
+minimal.Gardener_zeil.out: minimal.in java/Gardener_zeil.class
+	 time -o minimal.Gardener_zeil.time java -cp java Gardener_zeil < minimal.in > minimal.Gardener_zeil.out
+
+minimal.Gardener_zeil.diff: minimal.expected minimal.Gardener_zeil.out
+	 cmp minimal.Gardener_zeil.out minimal.expected > minimal.Gardener_zeil.diff
+
+small.gardener_sjz.out: small.in cpp/gardener_sjz.exe
+	 time -o small.gardener_sjz.time cpp/gardener_sjz.exe < small.in > small.gardener_sjz.out
+
+small.gardener_sjz.diff: small.expected small.gardener_sjz.out
+	 cmp small.gardener_sjz.out small.expected > small.gardener_sjz.diff
+
+small.gardener_bcs.out: small.in cpp/gardener_bcs.exe
+	 time -o small.gardener_bcs.time cpp/gardener_bcs.exe < small.in > small.gardener_bcs.out
+
+small.gardener_bcs.diff: small.expected small.gardener_bcs.out
+	 cmp small.gardener_bcs.out small.expected > small.gardener_bcs.diff
+
+small.Gardener_zeil.out: small.in java/Gardener_zeil.class
+	 time -o small.Gardener_zeil.time java -cp java Gardener_zeil < small.in > small.Gardener_zeil.out
+
+small.Gardener_zeil.diff: small.expected small.Gardener_zeil.out
+	 cmp small.Gardener_zeil.out small.expected > small.Gardener_zeil.diff
+
+pinwheel.gardener_sjz.out: pinwheel.in cpp/gardener_sjz.exe
+	 time -o pinwheel.gardener_sjz.time cpp/gardener_sjz.exe < pinwheel.in > pinwheel.gardener_sjz.out
+
+pinwheel.gardener_sjz.diff: pinwheel.expected pinwheel.gardener_sjz.out
+	 cmp pinwheel.gardener_sjz.out pinwheel.expected > pinwheel.gardener_sjz.diff
+
+pinwheel.gardener_bcs.out: pinwheel.in cpp/gardener_bcs.exe
+	 time -o pinwheel.gardener_bcs.time cpp/gardener_bcs.exe < pinwheel.in > pinwheel.gardener_bcs.out
+
+pinwheel.gardener_bcs.diff: pinwheel.expected pinwheel.gardener_bcs.out
+	 cmp pinwheel.gardener_bcs.out pinwheel.expected > pinwheel.gardener_bcs.diff
+
+pinwheel.Gardener_zeil.out: pinwheel.in java/Gardener_zeil.class
+	 time -o pinwheel.Gardener_zeil.time java -cp java Gardener_zeil < pinwheel.in > pinwheel.Gardener_zeil.out
+
+pinwheel.Gardener_zeil.diff: pinwheel.expected pinwheel.Gardener_zeil.out
+	 cmp pinwheel.Gardener_zeil.out pinwheel.expected > pinwheel.Gardener_zeil.diff
+
+slivers.gardener_sjz.out: slivers.in cpp/gardener_sjz.exe
+	 time -o slivers.gardener_sjz.time cpp/gardener_sjz.exe < slivers.in > slivers.gardener_sjz.out
+
+slivers.gardener_sjz.diff: slivers.expected slivers.gardener_sjz.out
+	 cmp slivers.gardener_sjz.out slivers.expected > slivers.gardener_sjz.diff
+
+slivers.gardener_bcs.out: slivers.in cpp/gardener_bcs.exe
+	 time -o slivers.gardener_bcs.time cpp/gardener_bcs.exe < slivers.in > slivers.gardener_bcs.out
+
+slivers.gardener_bcs.diff: slivers.expected slivers.gardener_bcs.out
+	 cmp slivers.gardener_bcs.out slivers.expected > slivers.gardener_bcs.diff
+
+slivers.Gardener_zeil.out: slivers.in java/Gardener_zeil.class
+	 time -o slivers.Gardener_zeil.time java -cp java Gardener_zeil < slivers.in > slivers.Gardener_zeil.out
+
+slivers.Gardener_zeil.diff: slivers.expected slivers.Gardener_zeil.out
+	 cmp slivers.Gardener_zeil.out slivers.expected > slivers.Gardener_zeil.diff
+
+serpentine.gardener_sjz.out: serpentine.in cpp/gardener_sjz.exe
+	 time -o serpentine.gardener_sjz.time cpp/gardener_sjz.exe < serpentine.in > serpentine.gardener_sjz.out
+
+serpentine.gardener_sjz.diff: serpentine.expected serpentine.gardener_sjz.out
+	 cmp serpentine.gardener_sjz.out serpentine.expected > serpentine.gardener_sjz.diff
+
+serpentine.gardener_bcs.out: serpentine.in cpp/gardener_bcs.exe
+	 time -o serpentine.gardener_bcs.time cpp/gardener_bcs.exe < serpentine.in > serpentine.gardener_bcs.out
+
+serpentine.gardener_bcs.diff: serpentine.expected serpentine.gardener_bcs.out
+	 cmp serpentine.gardener_bcs.out serpentine.expected > serpentine.gardener_bcs.diff
+
+serpentine.Gardener_zeil.out: serpentine.in java/Gardener_zeil.class
+	 time -o serpentine.Gardener_zeil.time java -cp java Gardener_zeil < serpentine.in > serpentine.Gardener_zeil.out
+
+serpentine.Gardener_zeil.diff: serpentine.expected serpentine.Gardener_zeil.out
+	 cmp serpentine.Gardener_zeil.out serpentine.expected > serpentine.Gardener_zeil.diff
+
+test1.gardener_sjz.out: test1.in cpp/gardener_sjz.exe
+	 time -o test1.gardener_sjz.time cpp/gardener_sjz.exe < test1.in > test1.gardener_sjz.out
+
+test1.gardener_sjz.diff: test1.expected test1.gardener_sjz.out
+	 cmp test1.gardener_sjz.out test1.expected > test1.gardener_sjz.diff
+
+test1.gardener_bcs.out: test1.in cpp/gardener_bcs.exe
+	 time -o test1.gardener_bcs.time cpp/gardener_bcs.exe < test1.in > test1.gardener_bcs.out
+
+test1.gardener_bcs.diff: test1.expected test1.gardener_bcs.out
+	 cmp test1.gardener_bcs.out test1.expected > test1.gardener_bcs.diff
+
+test1.Gardener_zeil.out: test1.in java/Gardener_zeil.class
+	 time -o test1.Gardener_zeil.time java -cp java Gardener_zeil < test1.in > test1.Gardener_zeil.out
+
+test1.Gardener_zeil.diff: test1.expected test1.Gardener_zeil.out
+	 cmp test1.Gardener_zeil.out test1.expected > test1.Gardener_zeil.diff
+
+gardener_bcs.gardener_sjz.out: gardener_bcs.in cpp/gardener_sjz.exe
+	 time -o gardener_bcs.gardener_sjz.time cpp/gardener_sjz.exe < gardener_bcs.in > gardener_bcs.gardener_sjz.out
+
+gardener_bcs.gardener_sjz.diff: gardener_bcs.expected gardener_bcs.gardener_sjz.out
+	 cmp gardener_bcs.gardener_sjz.out gardener_bcs.expected > gardener_bcs.gardener_sjz.diff
+
+gardener_bcs.gardener_bcs.out: gardener_bcs.in cpp/gardener_bcs.exe
+	 time -o gardener_bcs.gardener_bcs.time cpp/gardener_bcs.exe < gardener_bcs.in > gardener_bcs.gardener_bcs.out
+
+gardener_bcs.gardener_bcs.diff: gardener_bcs.expected gardener_bcs.gardener_bcs.out
+	 cmp gardener_bcs.gardener_bcs.out gardener_bcs.expected > gardener_bcs.gardener_bcs.diff
+
+gardener_bcs.Gardener_zeil.out: gardener_bcs.in java/Gardener_zeil.class
+	 time -o gardener_bcs.Gardener_zeil.time java -cp java Gardener_zeil < gardener_bcs.in > gardener_bcs.Gardener_zeil.out
+
+gardener_bcs.Gardener_zeil.diff: gardener_bcs.expected gardener_bcs.Gardener_zeil.out
+	 cmp gardener_bcs.Gardener_zeil.out gardener_bcs.expected > gardener_bcs.Gardener_zeil.diff
+
+cube.gardener_sjz.out: cube.in cpp/gardener_sjz.exe
+	 time -o cube.gardener_sjz.time cpp/gardener_sjz.exe < cube.in > cube.gardener_sjz.out
+
+cube.gardener_sjz.diff: cube.expected cube.gardener_sjz.out
+	 cmp cube.gardener_sjz.out cube.expected > cube.gardener_sjz.diff
+
+cube.gardener_bcs.out: cube.in cpp/gardener_bcs.exe
+	 time -o cube.gardener_bcs.time cpp/gardener_bcs.exe < cube.in > cube.gardener_bcs.out
+
+cube.gardener_bcs.diff: cube.expected cube.gardener_bcs.out
+	 cmp cube.gardener_bcs.out cube.expected > cube.gardener_bcs.diff
+
+cube.Gardener_zeil.out: cube.in java/Gardener_zeil.class
+	 time -o cube.Gardener_zeil.time java -cp java Gardener_zeil < cube.in > cube.Gardener_zeil.out
+
+cube.Gardener_zeil.diff: cube.expected cube.Gardener_zeil.out
+	 cmp cube.Gardener_zeil.out cube.expected > cube.Gardener_zeil.diff
+
+points750.gardener_sjz.out: points750.in cpp/gardener_sjz.exe
+	 time -o points750.gardener_sjz.time cpp/gardener_sjz.exe < points750.in > points750.gardener_sjz.out
+
+points750.gardener_sjz.diff: points750.expected points750.gardener_sjz.out
+	 cmp points750.gardener_sjz.out points750.expected > points750.gardener_sjz.diff
+
+points750.gardener_bcs.out: points750.in cpp/gardener_bcs.exe
+	 time -o points750.gardener_bcs.time cpp/gardener_bcs.exe < points750.in > points750.gardener_bcs.out
+
+points750.gardener_bcs.diff: points750.expected points750.gardener_bcs.out
+	 cmp points750.gardener_bcs.out points750.expected > points750.gardener_bcs.diff
+
+points750.Gardener_zeil.out: points750.in java/Gardener_zeil.class
+	 time -o points750.Gardener_zeil.time java -cp java Gardener_zeil < points750.in > points750.Gardener_zeil.out
+
+points750.Gardener_zeil.diff: points750.expected points750.Gardener_zeil.out
+	 cmp points750.Gardener_zeil.out points750.expected > points750.Gardener_zeil.diff
+

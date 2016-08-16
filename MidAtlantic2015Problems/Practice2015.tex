@@ -1,0 +1,85 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{times}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{wrapfig}
+%\usepackage{picins}
+\usepackage{alltt}
+\usepackage{array}
+\usepackage{siunitx}
+
+\widowpenalty10000%
+\clubpenalty10000%
+\tolerance=1000
+
+\newcommand{\problem}[1]{\begin{center}\section{\protect\rule{0pt}{1.1em}#1}\rhead{\sffamily\bfseries\thesection\hspace{0.5em}#1}\end{center}}
+\renewcommand{\thesection}{Practice Problem:}
+%\renewcommand{\sectionmark}[1]{\markright{foo #1}}
+\newcommand{\verbfile}[1]{\begin{alltt}\input{#1}\end{alltt}}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.5em}}
+
+\addtolength{\headheight}{20pt}
+\addtolength{\textheight}{10pt}
+
+
+\lhead{}
+\rhead{}
+\lfoot{\sffamily\bfseries Nov.~7, 2015}
+\cfoot{\sffamily\bfseries 2015 Mid-Atlantic Regional Contest Practice Problem}
+\rfoot{\sffamily\bfseries Page \thepage\ of \pageref{LastPage}}
+
+\newenvironment{icompact}{
+  \begin{list}{$\bullet$}{
+    \parsep 0pt plus 1pt
+    \partopsep 0pt plus 1pt
+    \topsep 2pt plus 2pt minus 1pt
+    \itemsep 0pt plus 1pt
+    \parskip 0pt plus 2pt
+    \leftmargin 0.3in}
+       \raggedright}
+  {\normalsize\end{list}}
+
+\newcounter{ecount}
+\newenvironment{ecompact}{
+  \begin{list}{\arabic{ecount}}{\usecounter{ecount}
+    \parsep 0pt plus 1pt
+    \partopsep 0pt plus 1pt
+    \topsep 2pt plus 2pt minus 1pt
+    \itemsep 0pt plus 1pt
+    \leftmargin 0.3in}
+       \raggedright}
+  {\normalsize\end{list}}
+
+
+\pagestyle{fancy}
+
+\begin{document}
+
+{\sffamily
+\bfseries
+\Large 
+\begin{center}
+\protect\rule{0pt}{1.1em}2015 Mid-Atlantic Regional Programming Contest\\
+Practice Round
+%\\ Draft \today
+\end{center}
+}
+
+
+\newif\ifPRACTICE
+\PRACTICEtrue
+
+\input{contestRules}
+
+\clearpage
+
+
+\sisetup{group-separator={,}}
+\input{moon/moon.tex}
+
+\end{document}

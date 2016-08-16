@@ -1,0 +1,253 @@
+Welcome to the
+\ifPRACTICE
+ practice round for the
+\fi
+2015 ICPC Mid-Atlantic Regional.  Before you start the
+contest, please take the time to review the following:
+
+\subsection*{The Contest}
+
+\newcounter{savedEnumi}
+
+\begin{enumerate} 
+\ifPRACTICE
+\item There is one (1) practice problem.  Please submit solutions or
+  request clarifications {\bfseries for this problem only.}  Unless
+  you have a real question about the problem, please submit at most
+  one clarification request, and at most two runs.  It is important
+  that everyone have a chance to see how the system works. Even if you
+  do not solve the practice problem, you should submit once just to
+  practice with the system.
+
+\item Before completing the practice problem, please
+  read all of the notes listed here.  They are designed to help you
+  solve the problems during the contest.
+
+\else
+\item There are eight (8) problems in the packet, labeled A--H.
+  These problems are NOT sorted by difficulty.  As a
+  team's solution is judged correct, the team will be awarded a
+  balloon.  The balloon colors are as follows:
+\input{balloons}
+\fi
+
+
+\item The winning team is the one that successfully completes the most
+    problems in the time allowed. 
+
+    If teams are tied with the same number of problems solved, the tie
+  is broken in favor of the team with the fewest penalty points. 
+  For each problem
+  {\em solved correctly}, penalty points are charged as the sum of
+
+    \begin{itemize}
+    \item the number of minutes elapsed since the start of the contest
+       to when the successful submission was made, and
+    \item 20 points for each incorrect submission prior to the
+    successful one.
+    \end{itemize}
+  No penalty points are added for problems that are never
+  solved.  
+  
+\item In the event that you feel a problem statement is ambiguous 
+  or incorrect, you may request a clarification.  Read the problem
+  carefully before requesting a clarification.  
+
+  If a clarification is issued during the contest, it will be
+  broadcast to {\em all} teams.
+
+  If the judges believe that the problem statement is sufficiently
+  clear, you will receive the response, ``No response, read problem
+  statement.''  If you receive this response, you should read the
+  problem description more carefully.  If you still feel there is an
+  ambiguity, you will have to be more specific or descriptive of the
+  ambiguity you may have found.
+
+
+\setcounter{savedEnumi}{\value{enumi}}
+
+\end{enumerate}
+
+
+\subsection*{Submitting}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{savedEnumi}}
+
+\item Solutions for problems submitted for judging are called runs.
+  Each run will be judged.  
+  
+
+\item
+  The judges will respond to your submission with one of the following
+  responses.
+
+\begin{center}
+\begin{tabular}{|c|p{4in}|}
+  \hline
+{\bfseries Response} & {\bfseries Explanation}\\
+\hline
+\hline
+{\bfseries Yes} & Your submission has been judged correct.\\
+{\bfseries Wrong Answer} & Your submission generated output that is
+not correct. %or is incomplete.
+\\
+{\bfseries Output Format Error} & Your submission's output is not in
+the correct format or is misspelled.\\
+{\bfseries Incomplete Output} & Your submission did not produce all of the required output.\\
+{\bfseries Excessive Output} & Your submission generated output in
+addition to or instead of what is required.\\
+{\bfseries Compilation Error} & Your submission failed to compile.\\
+{\bfseries Run-Time Error} & Your submission experienced a run-time error.\\
+{\bfseries Time-Limit Exceeded} & Your submission did not solve the
+judges' test data within 30 seconds.\\
+{\bfseries Other-Contact Staff} & Contact your local site judge for clarification.\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\item In the event that more than one response is applicable,
+  the judges may respond with any of the applicable responses.  For
+  example, a program that runs too long but produces incorrect
+  output before it is killed might receive either a ``Wrong Answer''
+  or a ``Time-Limit Exceeded'' response.  A program that crashes before
+  completing the test data set might receive either an ``Incomplete
+  Output'' or a ``Run-Time Error'' response.
+
+
+
+
+\item \textbf{Do not} request clarifications on
+  when a response will be returned.  If you have not received a
+  response for a run within 30 minutes of submitting it, {\bfseries
+  you may have a runner ask the local site judge to determine the
+  cause of the delay.}  
+
+  If, due to unforeseen circumstances, judging for one or more
+  problems begins to lag more than 30 minutes behind submissions, a
+  clarification announcement will be issued to all teams. This
+  announcement will include a change to the 30 minute time period that
+  teams are expected to wait before consulting the site judge.
+  
+\item The submission of code deliberately designed to delay, crash, 
+  or otherwise negatively affect the contest itself will be
+  considered grounds for immediate disqualification.    
+
+
+
+
+\setcounter{savedEnumi}{\value{enumi}}
+
+\end{enumerate}
+
+
+\subsection*{Your Programs}
+
+\begin{enumerate}
+\setcounter{enumi}{\value{savedEnumi}}
+
+\item Your program must be contained within a single source-code
+  file. Java programs should be written in the default (unnamed)
+  package, meaning that it should not contain a \texttt{package}
+  statement at all.
+
+  Use the filename extension ``{\tt .cpp}'' for C++ program files.
+  Use the extension ``{\tt .c}'' for C program files. 
+  Use the extension ``{\tt .java}'' for Java program files. 
+
+  Note that all filename extensions are lower case.
+
+\item Your code will be compiled for judging as follows:
+
+    \textbf{C:} \texttt{gcc -O2 -std=gnu99 -static} \textit{yourFileName} \texttt{-lm}
+
+    \textbf{C++:} \texttt{g++ -O2 -std=c++11 -static} \textit{yourFileName}
+
+    \textbf{Java:} \texttt{javac -encoding UTF-8 -sourcepath .} \textit{yourFileName}
+    
+
+    For Java, the compiled code will be executed using the command:
+    
+    \texttt{java -Xss8m -Xmx1024m } \textit{yourClassName}
+
+    
+
+\item All solutions must read from standard input and write to
+  standard output.  
+
+  In C this is {\tt scanf}/{\tt printf}, in C++ this
+  is {\tt cin}/{\tt cout}, and in Java this is {\tt System.in}/{\tt
+  System.out}.  
+
+\item Unless otherwise specified, all lines of program output 
+    \begin{itemize}
+
+        \item must be left justified, with no leading blank spaces
+          prior to the first non-blank character on that line,
+
+        \item must end with the appropriate line terminator
+          (\verb#\n#, \verb#endl#, or \verb#println()#), and
+
+        \item must not contain any blank characters at the end of the
+        line, between the final specified output and the line
+        terminator.
+
+    \end{itemize}
+
+    You must not print extra lines of output, even if empty, that are
+    not specifically required by the problem statement.
+
+\item Unless otherwise specified, all numbers in your output
+  should begin with the minus sign ({\tt -}) if negative, followed
+  immediately by 1 or more decimal digits.  If the number being
+  printed is a floating point number, then the decimal point should
+  appear, followed by the appropriate number of decimal digits. 
+
+  For output of real numbers, the number of digits after the decimal
+  point will be specified in the problem description (as the
+  ``{\em decimal digits of precision}'').
+
+  All floating point numbers printed to a given precision should be
+  rounded to the nearest value.  For example, if 2 decimal digits of
+  precision is requested, then 0.0152 would be printed as ``0.02'' but
+  0.0149 would be printed as ``0.01''.
+
+  In other words, neither scientific notation nor commas will be
+  used for numbers, and you should ensure that you use a printing
+  technique that rounds to the appropriate precision.
+
+  
+
+\item All input sets used by the judges will follow the input format
+  specification found in the problem description. You do not need to
+  test for input that violates the input format specified in the problem.
+  
+\item All lines of program input will end with the
+ appropriate line terminator (e.g., a linefeed on Unix/Linux systems,
+ a carriage return-linefeed pair on Windows systems).
+
+
+\item If a problem specifies that
+      an input is a floating point number, the input will be presented
+      according to the rules stipulated above for output of real
+      numbers, except that decimal points and the following digits may
+      be omitted for numbers with no non-zero decimal
+      portion. Scientific notation will not be used in input sets
+      unless a problem explicitly allows it.
+
+
+
+
+\item Every effort has been made to ensure that the compilers
+ and run-time environments used by the judges are as similar as
+ possible to those that you will use in developing your code.  
+ With that said, some differences may exist. It is, in general, 
+ your responsibility to write your code in a portable manner
+ compliant with the rules and standards of the programming language. 
+ You should not rely upon undocumented and non-standard behaviors.
+
+\end{enumerate}
+
+
+Good luck, and HAVE FUN!!!

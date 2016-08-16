@@ -1,0 +1,79 @@
+This zip file contains the problem set from the 2015 MidAtlantic
+Regional.
+
+It incorporates the following changes from the problem set as
+distributed to the teams:
+
+* problem A: The word "strictly" has been added (i.e., "strictly
+  increasing") in accordance with a clarification issued to teams.
+
+* problem B: n1 and n2 are reversed in Snell's law. I made that
+  mistake in the first draft of the problem, and we faithfully copied
+  the mistake into each subsequent version, the sample solutions and
+  the judging data. We discovered the mistake about 24 hours before
+  the contest and decided to leave it alone as it did not really
+  affect the programming style of a solution - it just meant that our
+  lasers were bending down towards the water instead of up away from
+  it.
+
+  Anyone reusing this problem for practice can decide if they want
+  to restore the physical realism.
+
+
+* problem F: A note has been added explaining that this problem was
+  withdrawn from the contest in a decision made after the problem sets
+  had been distributed to the site judges for printing.
+
+* problem F: In case anyone wishes to use this problem for practice
+  anyway, a stipulation that each city can only be visited once has
+  been added. If we had gone ahead and used the problem, this would
+  have been a necessary clarification.
+
+=================
+
+The authoring team:
+
+Steve Zeil, Old Dominion Univ,
+Thomas Kennedy, Old Dominion Univ,
+Yaohang Li, Old Dominion Univ,
+Kara Olsen, Old Dominion Univ (alum),
+
+and special thanks to our collaborators from other regions:
+
+Matthew Eastman, LSU  (South Central region)
+Bryce Sandlund, UW-Madison (North Central region) 
+
+=================
+
+Each directory contains a distinct problem. Refer to the problem
+titles and to the listing in balloons.tex for the relation to the
+problem IDs A, B, C, etc.
+
+In each directory you will find 
+  - source code of one or more sample solutions
+  - test0.in, test0.expected  The example from the problem statement.
+  - test1.in, test1.expected  The judging data
+  - makefile  On *nix systems, "make" compiles the sample solutions
+      and runs them, comparing the outputs to the .expected files.
+
+
+==================
+
+Notes on the Admin settings for PC^2
+
+Languages: C, C++ & Java 
+
+  Please set the compilation & run commands as described in Rule 10 of
+  the MidAtlantic2015.pdf
+
+
+Problems: all problems read from stdin, manual judge, 
+          use PC^2 validator, option 1
+
+Settings:
+   Max output size: 2048
+   Show number and name
+
+Judgements:
+   Add "No - Incomplete Output" 
+

@@ -1,0 +1,126 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{times}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{indentfirst}
+\usepackage{wrapfig}
+%\usepackage{picins}
+\usepackage{alltt}
+\usepackage{array}
+\usepackage{siunitx}
+
+\widowpenalty10000%
+\clubpenalty10000%
+\tolerance=1000
+
+%
+\newcommand{\problem}[1]{\begin{center}\section{\protect\rule{0pt}{1.1em}#1}\rhead{\sffamily\bfseries\thesection\hspace{0.5em}#1}\end{center}}
+\renewcommand{\thesection}{Problem \Alph{section}:}
+%\renewcommand{\sectionmark}[1]{\markright{foo #1}}
+\newcommand{\verbfile}[1]{\begin{alltt}\input{#1}\end{alltt}}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.5em}}
+
+\addtolength{\headheight}{20pt}
+\addtolength{\textheight}{10pt}
+
+
+\lhead{}
+\rhead{}
+\lfoot{\sffamily\bfseries Nov.~7, 2015}
+\cfoot{\sffamily\bfseries 2015 Mid-Atlantic Regional Programming Contest}
+\rfoot{\sffamily\bfseries Page \thepage\ of \pageref{LastPage}}
+
+\newenvironment{icompact}{
+  \begin{list}{$\bullet$}{
+    \parsep 0pt plus 1pt
+    \partopsep 0pt plus 1pt
+    \topsep 2pt plus 2pt minus 1pt
+    \itemsep 0pt plus 1pt
+    \parskip 0pt plus 2pt
+    \leftmargin 0.3in}
+       \raggedright}
+  {\normalsize\end{list}}
+
+\newcounter{ecount}
+\newenvironment{ecompact}{
+  \begin{list}{\arabic{ecount}}{\usecounter{ecount}
+    \parsep 0pt plus 1pt
+    \partopsep 0pt plus 1pt
+    \topsep 2pt plus 2pt minus 1pt
+    \itemsep 0pt plus 1pt
+    \leftmargin 0.3in}
+       \raggedright}
+  {\normalsize\end{list}}
+
+
+\pagestyle{fancy}
+
+\begin{document}
+
+{\sffamily
+\bfseries
+\Large 
+\begin{center}
+\protect\rule{0pt}{1.1em}2015 Mid-Atlantic Regional Programming Contest
+%\\ Draft \today
+\end{center}
+}
+
+
+This is a courtesy copy of the problem set for the
+Mid-Atlantic Regional contest.  It is an abbreviated version of the
+problem set provided to the teams. Omitted are several pages of rules
+and explanations of the contest and judging environment.
+
+
+\begin{center}
+{\large\bf Important:} 
+\end{center}
+
+The creation of this problem set was a collaboration
+among Regional Contests scheduled for November 7. These
+contests will be starting at different times and taking place in
+different time zones.
+
+In deference to the later starting contests, we ask that you refrain
+from emailing, blogging, posting, tweeting, or otherwise making any public
+comments about this problem set until November 8.
+
+~
+
+\hrule
+
+~
+
+\textbf{And now, a word from the head judge}
+
+Without a team of creative volunteers, there would be no problem set
+for this contest each year.  It's not too early to start thinking
+about the 2016 contest!
+
+We do require that problem authors not be coaches of or otherwise
+directly associated with a participating team. But if you are a team
+coach and have a colleague who might be interested in contributing,
+please drop a word to them. If you have a creative team member who
+will be an alumnus or alumna next year, you might do the same.
+
+Anyone interested in participating as a member of the authoring team
+for 2016 can send their contact information to this year's head judge
+for the region, Steven Zeil, at \texttt{zeil@cs.odu.edu}.
+
+\hrule
+
+~
+
+
+\input{balloons}
+
+\sisetup{group-separator={,}}
+\input{problemList}
+
+\end{document}

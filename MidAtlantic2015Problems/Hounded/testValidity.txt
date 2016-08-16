@@ -1,0 +1,18 @@
+<<< Testing file: test0.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: test0.in >>>
+<<< Testing file: test1.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: test1.in >>>
+<<< Testing file: minimal.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: minimal.in >>>
+<<< Testing file: parallelStreets.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: parallelStreets.in >>>
+<<< Testing file: mazes.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: mazes.in >>>
+<<< Testing file: oneStreet.in >>>
+Blank line at end of input. 
+<<< DONE Testing file: oneStreet.in >>>

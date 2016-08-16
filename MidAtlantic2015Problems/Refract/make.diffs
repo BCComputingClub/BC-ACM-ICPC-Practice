@@ -1,0 +1,38 @@
+allDiffs: compile test0.refract_sjz.diff test1.refract_sjz.diff test0.refract_bcs.diff test1.refract_bcs.diff test0.Refract_sjz.diff test1.Refract_sjz.diff
+
+test0.refract_sjz.out: test0.in cpp/refract_sjz.exe
+	 time -o test0.refract_sjz.time cpp/refract_sjz.exe < test0.in > test0.refract_sjz.out
+
+test0.refract_sjz.diff: test0.expected test0.refract_sjz.out
+	 cmp test0.refract_sjz.out test0.expected > test0.refract_sjz.diff
+
+test0.refract_bcs.out: test0.in cpp/refract_bcs.exe
+	 time -o test0.refract_bcs.time cpp/refract_bcs.exe < test0.in > test0.refract_bcs.out
+
+test0.refract_bcs.diff: test0.expected test0.refract_bcs.out
+	 cmp test0.refract_bcs.out test0.expected > test0.refract_bcs.diff
+
+test0.Refract_sjz.out: test0.in java/Refract_sjz.class
+	 time -o test0.Refract_sjz.time java -cp java Refract_sjz < test0.in > test0.Refract_sjz.out
+
+test0.Refract_sjz.diff: test0.expected test0.Refract_sjz.out
+	 cmp test0.Refract_sjz.out test0.expected > test0.Refract_sjz.diff
+
+test1.refract_sjz.out: test1.in cpp/refract_sjz.exe
+	 time -o test1.refract_sjz.time cpp/refract_sjz.exe < test1.in > test1.refract_sjz.out
+
+test1.refract_sjz.diff: test1.expected test1.refract_sjz.out
+	 cmp test1.refract_sjz.out test1.expected > test1.refract_sjz.diff
+
+test1.refract_bcs.out: test1.in cpp/refract_bcs.exe
+	 time -o test1.refract_bcs.time cpp/refract_bcs.exe < test1.in > test1.refract_bcs.out
+
+test1.refract_bcs.diff: test1.expected test1.refract_bcs.out
+	 cmp test1.refract_bcs.out test1.expected > test1.refract_bcs.diff
+
+test1.Refract_sjz.out: test1.in java/Refract_sjz.class
+	 time -o test1.Refract_sjz.time java -cp java Refract_sjz < test1.in > test1.Refract_sjz.out
+
+test1.Refract_sjz.diff: test1.expected test1.Refract_sjz.out
+	 cmp test1.Refract_sjz.out test1.expected > test1.Refract_sjz.diff
+

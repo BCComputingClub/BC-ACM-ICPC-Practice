@@ -1,0 +1,26 @@
+allDiffs: compile test0.Arrrgument_bcs.diff test1.Arrrgument_bcs.diff test0.Arrrgument_sjz.diff test1.Arrrgument_sjz.diff
+
+test0.Arrrgument_bcs.out: test0.in cpp/Arrrgument_bcs.exe
+	 time -o test0.Arrrgument_bcs.time cpp/Arrrgument_bcs.exe < test0.in > test0.Arrrgument_bcs.out
+
+test0.Arrrgument_bcs.diff: test0.expected test0.Arrrgument_bcs.out
+	 cmp test0.Arrrgument_bcs.out test0.expected > test0.Arrrgument_bcs.diff
+
+test0.Arrrgument_sjz.out: test0.in java/Arrrgument_sjz.class
+	 time -o test0.Arrrgument_sjz.time java -cp java Arrrgument_sjz < test0.in > test0.Arrrgument_sjz.out
+
+test0.Arrrgument_sjz.diff: test0.expected test0.Arrrgument_sjz.out
+	 cmp test0.Arrrgument_sjz.out test0.expected > test0.Arrrgument_sjz.diff
+
+test1.Arrrgument_bcs.out: test1.in cpp/Arrrgument_bcs.exe
+	 time -o test1.Arrrgument_bcs.time cpp/Arrrgument_bcs.exe < test1.in > test1.Arrrgument_bcs.out
+
+test1.Arrrgument_bcs.diff: test1.expected test1.Arrrgument_bcs.out
+	 cmp test1.Arrrgument_bcs.out test1.expected > test1.Arrrgument_bcs.diff
+
+test1.Arrrgument_sjz.out: test1.in java/Arrrgument_sjz.class
+	 time -o test1.Arrrgument_sjz.time java -cp java Arrrgument_sjz < test1.in > test1.Arrrgument_sjz.out
+
+test1.Arrrgument_sjz.diff: test1.expected test1.Arrrgument_sjz.out
+	 cmp test1.Arrrgument_sjz.out test1.expected > test1.Arrrgument_sjz.diff
+
