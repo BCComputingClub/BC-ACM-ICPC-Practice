@@ -1,7 +1,7 @@
 # BC-ACM-ICPC-Practice
 This repository contains previous ACM ICPC problems as well as some algorithms that may be useful for an ACM competition.
 
-## Adding New Algorithms
+## Algorithm Structure
 An example for an algorithm structure is as follows:
 ```
 ACM Algorithms/
@@ -27,5 +27,9 @@ The `ReadMe.txt` file should follow this general structure:
 </ol>
 
 For a detailed example of a `ReadMe.txt` file, please see [the ReadMe for the Greatest Common Divisor](ACM Algorithms/src/Greatest_Common_Divisor/).
+
+## Adding More Algorithms
+
+To add an algorithm, first clone this repository to make a local branch.
 
 Once you have modified your local branch and added an algorithm with this structure, please submit a pull request to add your algorithm to the `master` branch.
