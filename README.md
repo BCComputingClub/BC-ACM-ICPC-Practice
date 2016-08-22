@@ -27,3 +27,5 @@ The `ReadMe.txt` file should follow this general structure:
 </ol>
 
 For a detailed example of a `ReadMe.txt` file, please see [the ReadMe for the Greatest Common Divisor](ACM Algorithms/src/Greatest_Common_Divisor/).
+
+Once you have modified your local branch and added an algorithm with this structure, please submit a pull request to add your algorithm to the `master` branch.
