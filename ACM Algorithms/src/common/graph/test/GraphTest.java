@@ -1,4 +1,4 @@
-package graph.test;
+package common.graph.test;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-import graph.Graph;
-import graph.Vertex;
-import graph.exception.InvalidConstructionException;
+import common.graph.Graph;
+import common.graph.Vertex;
+import common.graph.exception.InvalidConstructionException;
 
 public class GraphTest {
 

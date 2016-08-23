@@ -1,4 +1,4 @@
-package graph;
+package common.graph;
 
 public class Edge<T> {
 

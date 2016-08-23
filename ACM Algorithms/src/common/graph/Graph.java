@@ -1,11 +1,11 @@
-package graph;
+package common.graph;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Hashtable;
 
-import graph.exception.InvalidConstructionException;
+import common.graph.exception.InvalidConstructionException;
 
 public class Graph<T> {
 

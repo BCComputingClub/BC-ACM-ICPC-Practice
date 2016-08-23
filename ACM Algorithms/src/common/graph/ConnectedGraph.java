@@ -1,6 +1,6 @@
-package graph;
+package common.graph;
 
-import graph.exception.InvalidConstructionException;
+import common.graph.exception.InvalidConstructionException;
 
 public class ConnectedGraph<T> extends Graph<T> {
 	

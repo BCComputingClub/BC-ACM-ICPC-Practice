@@ -1,8 +1,8 @@
-package graph;
+package common.graph;
 
 import java.util.ArrayList;
 
-import graph.exception.InvalidConstructionException;
+import common.graph.exception.InvalidConstructionException;
 
 public class Tree<T> extends ConnectedGraph<T> {
 	

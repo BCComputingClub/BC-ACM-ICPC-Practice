@@ -1,4 +1,4 @@
-package graph.exception;
+package common.graph.exception;
 
 public class InvalidConstructionException extends Exception {
 	
