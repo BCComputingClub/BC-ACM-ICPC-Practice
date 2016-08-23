@@ -1,6 +1,7 @@
 Maximum Subarray Problem
 
 Page 68 in Introduction to Algorithms, 3rd ed. by Cormen, et.al,
+Algorithm from http://www.algorithmist.com/index.php/Kadane's_Algorithm
 
 Problem:
 Given an array of length n, find the contiguous subarray with the greatest sum of its elements
