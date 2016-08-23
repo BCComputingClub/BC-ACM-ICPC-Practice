@@ -11,7 +11,7 @@ ACM Algorithms/
         └── ReadMe.txt
 ```
 The name of the algorithm should be the name of the directory within `ACM Algorithms/`. 
-In this case, `Greatest_Common_Divisor`.
+In this case, `Greatest_Common_Divisor`. Note that `Greatest_Common_Divisor` is the package name for a Java source file.
 
 The source file for the algorithm should have a meaningful name, in this case `GCD.java`.
 
