@@ -28,6 +28,10 @@ The `ReadMe.txt` file should follow this general structure:
 
 For a detailed example of a `ReadMe.txt` file, please see [the ReadMe for the Greatest Common Divisor](ACM Algorithms/src/Greatest_Common_Divisor/).
 
+## Common Classes
+
+Common classes, such as those used for graphing problems, should be located in `ACM Algorithms/src/common`
+
 ## Adding More Algorithms
 
 To add an algorithm, first clone this repository to make a local branch.
