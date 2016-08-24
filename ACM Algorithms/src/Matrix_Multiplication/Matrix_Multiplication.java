@@ -1,6 +1,10 @@
 package Matrix_Multiplication;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+>>>>>>> branch 'master' of https://github.com/tBostic/BC-ACM-ICPC-Practice.git
  * @author Trevor Bostic
  * This program can multiply to matrices together, so long as they fit the requirements found in the read me
  */
