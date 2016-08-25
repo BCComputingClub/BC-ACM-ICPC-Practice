@@ -1,7 +1,3 @@
-/**
- * 
- */
-package Greatest_Common_Divisor;
 
 /**
  * @author Trevor Bostic

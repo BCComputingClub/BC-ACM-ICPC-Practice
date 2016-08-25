@@ -1,7 +1,3 @@
-/**
- * 
- */
-package Maximum_Subarray;
 
 /**
  * @author Trevor Bostic
