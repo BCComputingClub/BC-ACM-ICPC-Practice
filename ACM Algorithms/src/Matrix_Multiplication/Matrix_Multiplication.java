@@ -1,8 +1,5 @@
-package Matrix_Multiplication;
 
 /**
-<<<<<<< HEAD
-=======
  * 
 >>>>>>> branch 'master' of https://github.com/tBostic/BC-ACM-ICPC-Practice.git
  * @author Trevor Bostic

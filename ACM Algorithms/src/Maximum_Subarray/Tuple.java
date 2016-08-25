@@ -1,4 +1,3 @@
-package Maximum_Subarray;
 
 /**
  * 
