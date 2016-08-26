@@ -1,4 +1,4 @@
-package MergeSort;
+package MergeSort; 
 /**
  * 	@author Austin Lane
  *	

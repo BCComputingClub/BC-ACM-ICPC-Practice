@@ -1,4 +1,4 @@
-package QuickSort;
+package QuickSort; 
 /**
  * 	@author Austin Lane
  *	Quicksort sorts an array of comparable objects into ascending order by comparing a length of 

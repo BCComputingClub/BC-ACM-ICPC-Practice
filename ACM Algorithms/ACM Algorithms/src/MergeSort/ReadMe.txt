@@ -1,4 +1,4 @@
-Mergesort
+Mergesort 
 
 Algorithm:
 https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort
