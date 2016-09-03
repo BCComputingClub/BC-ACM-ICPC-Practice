@@ -1,4 +1,4 @@
-package MergeSort; 
+package MergeSort;
 /**
  * 	@author Austin Lane
  *	
@@ -6,24 +6,6 @@ package MergeSort;
  */
 public class Mergesort 
 {	
-	public static void main(String[] args)
-	{
-		long startTime;
-		long endTime;
-		// 17, 41, 5, 22, 54, 6, 29, 3, 13 works
-		// 35, 33, 42, 10, 14, 19, 27, 44, 26, 31 works
-		// 7, 3, 8, 10, 43, 95, 72, 85, 39, 33, 92, 12 works
-		// 'a', 'z', 'c', 'b', 'q', 'A' works
-		// 'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a' works
-		// 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 works
-		// 3, 8, 6, 3, 10, 43, 3, 85, 3, 3, 97 works
-		// 7, 4, 96, 7, 7, 93, 54, 7, 93, 7, 932, 7, 7, 97, 99, 32, 7, 53, 7, 7, 12, 32, 4, 7, 7 works
-		Character[] ar = {'j', 'i', 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a'};
-		startTime = System.currentTimeMillis();
-		run(ar);
-		endTime = System.currentTimeMillis();
-		System.out.println("Sorted " + ar.length + " elements in " + (endTime - startTime) + "ms");
-	}
 	/**
 	 * This method can be used in the driver program to run the Mergesort algorithm
 	 * @param array = array of comparable objects that needs to be sorted
