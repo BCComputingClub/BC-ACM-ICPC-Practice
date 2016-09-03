@@ -48,5 +48,5 @@ function partitionFunc(left, right, pivot)
 end function
 
 Example:
-Integer[] containing 17, 41, 5, 22, 54, 6, 29, 3, 13 is sorted to 3, 5, 6, 13, 17, 22, 29, 41, 54
-Character[] containing 'a', 'z', 'c', 'b', 'q', 'A' is sorted to A, a, b, c, q, z
+Integer[] containing 17, 41, 5, 22, 54, 6, 29, 3, 13 is sorted into 3, 5, 6, 13, 17, 22, 29, 41, 54
+Character[] containing 'a', 'z', 'c', 'b', 'q', 'A' is sorted into A, a, b, c, q, z

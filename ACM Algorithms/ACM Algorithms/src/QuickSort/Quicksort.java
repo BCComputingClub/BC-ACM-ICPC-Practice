@@ -2,7 +2,7 @@ package QuickSort;
 /**
  * 	@author Austin Lane
  *	Quicksort sorts an array of comparable objects into ascending order by comparing a length of 
- *	the array to a pivot.
+ *	the array to a pivot element.
  *	There's no main method, you can just pass an array into the run method in a driver program.
  */
 public class Quicksort 
