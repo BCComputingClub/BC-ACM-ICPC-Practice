@@ -26,6 +26,11 @@ public class WeightedGraph <T> extends ConnectedGraph<T>
 		return list;
 	}
 	
+	public Hashtable<Vertex<T>, ArrayList<WeightedEdge<T>>> getHashtable()
+	{
+		return adjacencyList;
+	}
+	
 	public ArrayList<WeightedEdge<T>> getWeightedEdges()
 	{
 		ArrayList<WeightedEdge<T>> list = new ArrayList<>();
@@ -58,6 +63,35 @@ public class WeightedGraph <T> extends ConnectedGraph<T>
 		Vertex<T> v = findVertex(elm2);
 		if (v == null)
 			v = _addVertex(elm2);
+		
+		WeightedEdge<T> edge = new WeightedEdge<T>(u, v, weight);
+		
+		ArrayList<WeightedEdge<T>> list = adjacencyList.get(u);
+		list.add(edge);
+		adjacencyList.put(u, list);
+
+		list = adjacencyList.get(v);
+		list.add(edge);
+		adjacencyList.put(v, list);
+
+		if (!v.equals(u))
+			unionComponents(u, v);
+
+		return edge;
+	}
+	
+	public WeightedEdge<T> addEdge(Vertex<T> elm1, Vertex<T> elm2, int weight) throws InvalidConstructionException{
+		if (elm1 == null || elm2 == null)
+			throw new NullPointerException();
+
+		Vertex<T> u = findVertex(elm1.getData());
+		
+		if (u == null)
+			u = _addVertex(elm1.getData());
+
+		Vertex<T> v = findVertex(elm2.getData());
+		if (v == null)
+			v = _addVertex(elm2.getData());
 		
 		WeightedEdge<T> edge = new WeightedEdge<T>(u, v, weight);
 		
@@ -170,6 +204,14 @@ public class WeightedGraph <T> extends ConnectedGraph<T>
 	}
 	
 	public void print() {
+		System.out.println("Weighted Graph");
+		for (Vertex<T> v : adjacencyList.keySet())
+		{
+			System.out.println(v.toString() + adjacencyList.get(v).toString());
+		}
+	}
+	
+	/*public void print() {
 		System.out.println("Graph");
 		for (Vertex<T> v: adjacencyList.keySet()) {
 			System.out.print("[" + v.toString() + "] ");
@@ -180,11 +222,11 @@ public class WeightedGraph <T> extends ConnectedGraph<T>
 						System.out.print(e.getSecond().toString());
 					else
 						System.out.print(e.getFirst().toString());
-
+					
 					System.out.print(" ");
 				}
 			}
 			System.out.println();
 		}
-	}
+	}*/
 }
