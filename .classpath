@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Matrix_Multiplication/|Subset_Sum/src/|Maximum_Subarray/|Greatest_Common_Divisor/" kind="src" path="ACM Algorithms/src"/>
+	<classpathentry kind="src" path="ACM Algorithms/src/Greatest_Common_Divisor"/>
+	<classpathentry kind="src" path="ACM Algorithms/src/Matrix_Multiplication"/>
+	<classpathentry kind="src" path="ACM Algorithms/src/Maximum_Subarray"/>
+	<classpathentry kind="src" path="ACM Algorithms/src/Subset_Sum/src"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/Arrrgument/java"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/Gardener/java"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/Hounded/java"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/Kinfolk/java"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/OfTheChildren/java"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/Refract/java"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/Sequences/java"/>
+	<classpathentry kind="src" path="MidAtlantic2015Problems/TalkingNumbers/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
