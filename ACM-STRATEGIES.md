@@ -9,4 +9,5 @@
 	<li>Alternatively, print out a hardcopy and have your teammates look over it while you implement their pseudocode</li>
 	</ol>
 <li>When solving particularly complex problems, it can be beneficial to have the entire team focus on that problem and talk it over. However, you should try to solve as many other problems as possible first</li>
+<li>You should consult the list of ACM algorithms we have prepared before the competition, so that you have an idea of what kind of problem each algorithm may be useful in solving</li>
 </ol>
