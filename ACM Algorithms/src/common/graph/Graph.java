@@ -4,11 +4,15 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Set;
 
+import common.graph.Edge;
 import common.graph.exception.InvalidConstructionException;
+import common.graph.Tree;
+import common.graph.Vertex;
 
-public class Graph<T> {
-
+public class Graph <T>
+{
 	protected Hashtable<Vertex<T>, ArrayList<Edge<T>>> adjacencyList = null;
 	protected Hashtable<Vertex<T>, Vertex<T>> connectedComponents = null;
 
@@ -66,10 +70,38 @@ public class Graph<T> {
 		return edge;
 	}
 
-	private void unionComponents(Vertex<T> u, Vertex<T> v) {
+	protected void unionComponents(Vertex<T> u, Vertex<T> v) {
 		connectedComponents.put(findComponent(u), findComponent(v));
 	}
 
+	public ArrayList<Vertex<T>> getVertecies()
+	{
+		ArrayList<Vertex<T>> list = new ArrayList<>();
+		list.addAll(adjacencyList.keySet());
+		
+		return list;
+	}
+	
+	public ArrayList<Edge<T>> getEdges()
+	{
+		ArrayList<Edge<T>> list = new ArrayList<>();
+		Set<Vertex<T>> set = adjacencyList.keySet();
+		ArrayList<Edge<T>> vals = null;
+		
+		for (Vertex<T> vert : set)
+		{
+			vals = adjacencyList.get(vert);
+			
+			for (Edge<T> edge : vals)
+			{
+				if (!list.contains(edge))
+					list.add(edge);
+			}
+		}
+		
+		return list;
+	}
+	
 	private Vertex<T> findComponent(Vertex<T> v) {
 		Vertex<T> curVertex = v;
 		while(!curVertex.equals(connectedComponents.get(curVertex)))
